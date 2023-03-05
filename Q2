@@ -1,0 +1,25 @@
+function fibonacci(num) {
+  if (num === 0) {
+    return 0;
+  } else if (num === 1) {
+    return 1;
+  } else {
+    return fibonacci(num - 1) + fibonacci(num - 2);
+  }
+}
+
+const num = parseInt(prompt("Digite um número: "));
+
+let pertence = false;
+for (let i = 0; fibonacci(i) <= num; i++) {
+  if (fibonacci(i) === num) {
+    pertence = true;
+    break;
+  }
+}
+
+if (pertence) {
+  console.log(num + " pertence à sequência de Fibonacci!");
+} else {
+  console.log(num + " não pertence à sequência de Fibonacci.");
+}
