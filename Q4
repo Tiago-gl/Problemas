@@ -1,0 +1,15 @@
+Essa questão pode ser interpretada de duas maneiras, a primeira de senso comum é que eles estarão tecnicamente 
+no mesmo lugar durante o cruzamento, ou seja, ambos estarão a mesma distância de Ribeirão Preto, já a segunda forma de interpretação considera outras variáveis e
+exige alguns calculos para que se chegue no resultado onde o carro estará mais próximo de Ribeirão Preto, já que o caminhão viajou menos tempo que o carro, seguem
+a seguir os calculos:
+
+110 km/h + 80 km/h = 190 km/h
+d_carro = v_carro * t = 110 * x
+d_caminhão = v_caminhão * (x + 0,0833)
+d_carro + d_caminhão = 100
+110 * x + 80 * (x + 0,0833) = 100
+x = 0,496 horas
+d_carro = 110 * 0,496 = 54,56 km
+d_caminhão = 80 * (0,496 + 0,0833) = 43,32 km
+d_RP = 100/2 - d_carro = 45,44 km
+d_Franca = 100/2 - d_caminhão = 6,68 km
